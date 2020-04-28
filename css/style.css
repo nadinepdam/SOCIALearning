@@ -1,0 +1,489 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    font-size: 10pt;
+}
+
+/***************** THE FORM, fieldset and legend *****************/
+
+form, .results {
+    position: relative;
+    top: 33px;
+    width: 400px;
+    margin: auto;
+    border: 2px solid #D1F6F0;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 55px;
+    margin-bottom: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.instruction {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: 2px solid #BDE2FF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+legend {
+    font-size: 1.2em;
+    padding: 2px 4px;
+    
+}
+
+/*********************** FORM CONTENT - divs ********************/
+
+.questions {
+    font-style: italic;
+}
+
+.divA, .divB, .divC, .divD {
+    margin: 11px 0;
+}
+
+.divA input {
+    position: absolute;
+    left: 230px;
+    width: 170px;
+    border-radius: 4px;
+    padding: 2px;
+    color: #393B3C;
+}
+
+/***************** SELECT DROPDOWN AND TEXTAREA  *****************/
+
+.divC select {
+    position: absolute;
+    left: 230px;
+}
+
+textarea {
+    border-radius: 4px;
+    padding: 5px;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* BUTTONS */
+
+.buttons {
+    height: 60px;
+}
+
+button {
+    padding: 9px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #E1D2FF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #E1D2FF;
+}
+
+.leftbutton, .rightbutton {
+    width: 50%;
+    float: left;
+}
+
+#submit {
+    float: right;
+}
+
+#reset {
+    float: left;
+}
+
+/*********************** RESULTS PAGE ***************************/
+
+.results p {
+    margin: 20px 0;
+}
+
+#userdata {
+    color: #FF7A7A;
+}
+
+.results a {
+    color: #825DBD;
+}
+
+.results a:hover {
+    color: #E1D2FF;
+}
+
+/************************ NAVIGATION BAR ***********************/
+
+#mainNavDiv {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+#logoDiv {
+    width: 150px;
+    position: absolute;
+    left: 30px;
+    top: 21px;
+}
+
+#logoDiv p {
+    font-size: 20px;
+}
+
+.main-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.main-header {
+    margin: 0;
+    width: 50%;
+    height: 5%;
+    position: absolute;
+    left: 620px;
+    top: 20px;
+}
+
+/********************** MENU BAR - buttons *********************/
+
+.main-nav {
+    float: right;
+}
+
+.main-nav > li {
+    float: left;
+}
+
+.main-nav a {
+    color: #000000;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: underline #E1C3FF;
+}
+
+.main-nav a:hover {
+    color: #C0F0EB;
+}
+
+/************************ DROPDOWN ************************/
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:after {
+    content: "\0025BD";
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 9%;
+}
+
+.drop-nav {
+    position: absolute;
+    display: none;
+}
+
+.drop-nav li {
+    border-bottom: 1px solid #3A4651;
+    background-color: #FFFFFF;
+}
+
+.dropdown:hover > .drop-nav {
+    display: block; 
+}
+
+/********************* HOME PAGE CONTENT *****************/
+
+#mainHomeDiv {
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    padding-left: 20px;
+}
+
+.purpose, .quote, #logoIconDiv {
+    width: 40%;
+    border: 2px solid #C0F0EB;
+    border-radius: 15px;
+}
+
+/***************** LEFT BOX ***************/
+
+.purpose {
+    padding: 25px;
+    font-size: 13pt;
+}
+
+/************* TOP RIGHT BOX ************/
+
+.quote {
+    position: absolute;
+    left: 52%;
+    top: 0%;
+    padding: 25px 0px 25px 45px;
+    font-size: 14pt;
+}
+
+/**************** EMOTICON TEXT ***************/
+
+.emoticon {
+    font-size: 26px;
+    position: absolute;
+    left: 69%;
+    top: 39%;
+}
+
+/************* BOTTOM RIGHT BOX *************/
+
+#logoIconDiv {
+    padding: 23px;
+    position: absolute;
+    left: 52%;
+    bottom: 0%;
+}
+
+#logoIconDiv img {
+    width: 70px;
+    margin: 10px;
+}
+
+.tumblrLogo {
+    width: 100px;
+    position: relative;
+}
+
+.twtLogo {
+    position: absolute;
+    left: 36%;
+    top: 10.5%;
+}
+
+.instaLogo {
+    position: absolute;
+    left: 66%;
+    top: 10.5%;
+}
+
+.tiktokLogo {
+    margin-left: 16%;
+}
+
+.snapLogo {
+    position: absolute;
+    left: 51%;
+    top: 50%
+}
+
+/******************* SM CONTENTS TABLE ********************/
+
+#smTable {
+    left: 10%;
+    margin: 35px auto;
+    position: static;
+    width: 55%;
+    margin-top: 90px;
+    border: 2px solid #C0F0EB;
+    border-radius: 15px;
+}
+
+#smTable thead {
+    color: #BDE2FF;
+    font-size: 12pt;
+    letter-spacing: 2px;
+}
+
+#smTable tr {
+    border-bottom: 1px solid grey;
+}
+
+#smTable th, td {
+    padding: 15px 30px 15px 30px;
+    border-bottom: 1px solid grey;
+}
+
+.smDes, .tblrAbt, .twtAbt, .instaAbt, .ttAbt, #snapAbt {
+    border-left: 1px solid grey;
+}
+
+#snapAbTitle, #snapAbt {
+    border-bottom: none;
+}
+
+/******************* SM TOOLS *****************/
+
+#tumblr, #twitter, #instagram, #tiktok, #snapchat {
+    margin: 20px auto;
+    width: 80%;
+    padding: 15px;
+    border: 2px solid #C0F0EB;
+    border-radius: 15px;
+}
+
+#tumblr {
+    margin-top: 80px;
+}
+
+#snapchat {
+    margin-bottom: 80px;
+}
+
+.smTitle {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.tblrTools, .tblrSafety, .tblrTL, .twtTools, .twtSafety, .twtTL, .instaTools, .instaSafety, .instaTL, .ttTools, .ttSafety, .ttTL, .snapTools, .snapSafety {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #BDE2FF;
+    border-radius: 10px;
+}
+
+/******************** REGISTER - divs ********************/
+
+.tblrReg, .twtReg, .instaReg, .ttReg, .snapReg {
+    display: flex;
+    margin: 10px;
+    border: 2px solid #BDE2FF;
+    border-radius: 10px;
+} 
+
+.tblrInstructions, .twtInstructions, .instaInstructions, .ttInstructions, .snapInstructions {
+    padding: 20px;
+}
+
+.tblrVid, .twtVid, .instaVid, .ttVid, .snapVid {
+    padding: 15px;
+    border-left: 2px solid #BDE2FF;
+}
+
+/******************** TUMBLR - tools ********************/
+
+.tblrTools1 img {
+    width: 700px;
+    margin-left: 140px;
+}
+
+.tblrTools2 img, .tblrTools3 img, .tblrTools4 img, .tblrTools5 img, .tblrTools6 img, .tblrTools7 img, .tblrTools8 img {
+    width: 500px;
+    margin-left: 250px;
+}
+
+/******************* RESOURCES TABLE ****************/
+
+#resourceTable {
+    left: 10%;
+    margin: 35px auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: static;
+    width: 55%;
+    border: 2px solid #C0F0EB;
+    border-radius: 15px;
+}
+
+#resourceTable thead {
+    color: #BDE2FF;
+    font-size: 12pt;
+    letter-spacing: 2px;
+}
+
+#resourceTable tr {
+    border-bottom: 1px solid grey;
+}
+
+#resourceTable th, td {
+    padding: 15px 30px 15px 30px;
+    border-bottom: 1px solid grey;
+}
+
+.rLink, #R {
+    border-left: 1px solid grey;
+}
+
+#R {
+    border-left: none;
+    border-bottom: none;
+}
+
+.rLast {
+    border-bottom: none;
+    border-left: 1px solid grey;
+}
+
+/********************* SITEMAP ********************/
+
+#sitemapDiv {
+    margin: 0 auto;
+    width: 15%;
+    font-size: 13pt;
+    margin-top: 80px;
+    padding: 20px 0px 20px 80px;
+    border: 2px solid #C0F0EB;
+    border-radius: 15px;
+}
+
+.mapSM {
+    text-indent: 20px;
+}
+
+/******************* FOOTER CONTENT ****************/
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #FFF0FE;
+}
+
+#footerCon {
+    margin: 0 auto;
+    display: flex;
+    width: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contactF {
+    margin-left: 5px;
+}
+
+.resourceF {
+    margin-left: 29px;
+}
+
+.sitemap {
+    margin-left: 27px;
+}
